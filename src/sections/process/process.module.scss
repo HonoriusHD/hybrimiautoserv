@@ -1,0 +1,76 @@
+@use './variables.scss';
+
+.process {
+  background-color: variables.$background-color;
+  @include variables.flexProps(column, center, center);
+
+  .process_wrapper {
+    position: relative;
+    margin: 60px auto 140px;
+    @include variables.flexProps(row, space-around, flex-start);
+    flex-wrap: wrap;
+    .card {
+      margin-bottom: 40px;
+      position: relative;
+      .process_card {
+        width: 50%;
+      }
+      .leftCornerElement {
+        position: absolute;
+        height: 30px;
+        width: 2px;
+        background-color: variables.$tertiary-color;
+      }
+      .topCornerElement {
+        position: absolute;
+        height: 2px;
+        width: 30px;
+        background-color: variables.$tertiary-color;
+      }
+      .rightCornerElement {
+        position: absolute;
+        bottom: 0;
+        height: 30px;
+        width: 2px;
+        background-color: variables.$tertiary-color;
+        right: 0;
+      }
+      .bottomCornerElement {
+        position: absolute;
+        bottom: 0;
+        height: 2px;
+        width: 30px;
+        background-color: variables.$tertiary-color;
+        right: 0;
+      }
+      .process_card {
+        position: relative;
+        border: 1px solid #fefefe27;
+        padding: 30px;
+        width: 375px;
+        h3 {
+          border: 1px solid #fefefe;
+          width: fit-content;
+          margin-bottom: 30px;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .process {
+    .process_wrapper {
+      margin: 50px auto 30px;
+      .card {
+        .process_card {
+          position: relative;
+          border: 1px solid #fefefe27;
+          padding: 30px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

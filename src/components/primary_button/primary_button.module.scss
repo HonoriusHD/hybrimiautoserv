@@ -1,0 +1,37 @@
+@use './variables';
+
+input.primary_button {
+  padding: 10px 0;
+  width: 100%;
+  margin-top: 50px;
+  font-weight: variables.$menu-weight;
+  font-size: variables.$paragraph-size;
+  transition: 0.3s ease;
+  border: none;
+  &:hover {
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: variables.$tertiary-color;
+  }
+}
+
+.primary_color {
+  color: variables.$button-color;
+  background-color: variables.$background-color;
+}
+
+.secondary-color {
+  background-color: variables;
+}
+
+.tertiary-color {
+  background-color: variables;
+}
+
+@media screen and (max-width: 380px) {
+  input.primary_button {
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+}

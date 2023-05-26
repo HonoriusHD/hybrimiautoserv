@@ -1,0 +1,122 @@
+@use './variables';
+
+.footer {
+  background-color: variables.$background-color;
+  @include variables.flexProps(column, center, center);
+  footer {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    @include variables.flexProps(column, center, center);
+    .footer_logo {
+      @include variables.flexProps(column, center, center);
+      color: variables.$footer-title-color;
+      font-weight: variables.$footer-weight;
+      font-size: 24px;
+      margin: 20px 0;
+      width: 100%;
+    }
+    .footer_info {
+      .menu_info {
+        @include variables.flexProps(column, center, center);
+        .footer_nav {
+          @include variables.flexProps(row, space-between, center);
+          li {
+            margin: 0 12px;
+            color: variables.$footer-title-color;
+          }
+        }
+      }
+      .social_info,
+      .menu_info,
+      .developer_info {
+        .footer_text {
+          padding-top: 12px;
+          color: variables.$footer-title-color;
+          font-weight: variables.$footer-weight;
+        }
+      }
+      padding: 50px 0;
+      width: 100%;
+      @include variables.flexProps(row, space-between, center);
+    }
+    .legal {
+      width: 100%;
+      max-width: 330px;
+      @include variables.flexProps(column, center, center);
+      p {
+        color: #636363;
+      }
+      .legal_links {
+        margin-bottom: 20px;
+        width: 70%;
+        @include variables.flexProps(row, space-between, center);
+      }
+      .legal_icons {
+        @include variables.flexProps(row, space-around, center);
+        width: 100%;
+      }
+    }
+  }
+  .copyright {
+    width: 100%;
+    @include variables.flexProps(row, center, center);
+    border-top: 1px solid rgb(65, 65, 65);
+    padding: 32px 0;
+    p {
+      text-align: center;
+      color: rgb(85, 85, 85);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    footer {
+      padding-top: 0px;
+      padding-bottom: 20px;
+      .footer_logo {
+        @include variables.flexProps(column, flex-start, flex-start);
+      }
+      .footer_info {
+        .menu_info {
+          @include variables.flexProps(column, flex-start, flex-start);
+          .footer_nav {
+            @include variables.flexProps(column, flex-start, flex-start);
+            li {
+              margin: 0;
+            }
+          }
+        }
+        .social_info,
+        .menu_info,
+        .developer_info {
+          margin-bottom: 20px;
+          .footer_text {
+            padding-top: 2px;
+          }
+        }
+        padding: 0;
+        @include variables.flexProps(column, flex-start, flex-start);
+      }
+      .legal {
+        max-width: initial;
+        @include variables.flexProps(column, flex-start, flex-start);
+        p {
+          margin-bottom: 5px;
+        }
+        .legal_links {
+          width: 70%;
+          @include variables.flexProps(column, flex-start, flex-start);
+        }
+        .legal_icons {
+          margin-bottom: 10px;
+          @include variables.flexProps(column, flex-start, flex-start);
+          width: 100%;
+          .legal_icon {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}

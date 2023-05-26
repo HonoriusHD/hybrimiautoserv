@@ -1,0 +1,76 @@
+@mixin flexProps($direction, $justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+//Colors
+
+$primary-color-one: #03050e;
+$primary-color-two: #fefefe;
+$secondary-color-two: #454545;
+$secondary-color-one: #d9d9d9;
+// $tertiary-color:#0035F0;
+$tertiary-color: red;
+
+//Text
+
+$background-color: $primary-color-one;
+$paragraph-color: $secondary-color-one;
+$headers-color: $primary-color-two;
+$menu-color: $primary-color-two;
+$caption-color: $secondary-color-one;
+$footer-title-color: $primary-color-two;
+$footer-info-color: $secondary-color-one;
+$button-color: $primary-color-two;
+
+//Desktop
+
+$max-width: 1400px;
+
+$border-radius-smallest: 4px;
+$border-radius-smaller: 8px;
+$border-radius-medium: 16px;
+$border-radius-large: 24px;
+$border-radius-lg: 32px;
+
+$h1-size: 48px;
+$h2-size: 36px;
+$h3-size: 28px;
+$h4-size: 24px;
+$h5-size: 20px;
+$h6-size: 18px;
+
+$paragraph-size: 18px;
+$caption-size: 14px;
+
+$headers-weight: bold;
+$paragraph-weight: regular;
+$menu-weight: 600;
+$footer-weight: 600;
+$inputs-weight: 600;
+
+// Tablet
+
+$tab-h1-size: 40px;
+$tab-h2-size: 36px;
+$tab-h3-size: 28px;
+$tab-h4-size: 24px;
+$tab-h5-size: 20px;
+$tab-h6-size: 18px;
+
+$tab-paragraph-size: 18px;
+$tab-caption-size: 14px;
+
+// Mobile
+
+$mob-h1-size: 30px;
+$mob-h2-size: 28px;
+$mob-h3-size: 22px;
+$mob-h4-size: 20px;
+$mob-h5-size: 18px;
+$mob-h6-size: 16px;
+
+$mob-paragraph-size: 16px;
+$mob-caption-size: 14px;

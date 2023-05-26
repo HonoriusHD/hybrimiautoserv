@@ -1,0 +1,181 @@
+@use './variables';
+
+* {
+  font-family: 'Saira', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+section {
+  position: relative;
+  @include variables.flexProps(row, center, center);
+  article.article-content,
+  footer {
+    padding: 0 100px;
+    width: 100%;
+    max-width: variables.$max-width;
+    z-index: 10;
+  }
+}
+.sectionBottom {
+  margin-bottom: 160px;
+}
+
+.sectionPaddingTop {
+  padding-top: 160px;
+}
+
+.sectionPaddingBottom {
+  padding-bottom: 160px;
+}
+
+a {
+  padding-bottom: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+  .active {
+    border-bottom: 1px solid variables.$tertiary-color;
+  }
+  &:hover {
+    color: variables.$tertiary-color;
+  }
+}
+
+p {
+  font-size: variables.$paragraph-size;
+  color: variables.$paragraph-color;
+  line-height: 150%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: variables.$headers-color;
+  font-weight: variables.$headers-weight;
+  line-height: 130%;
+}
+
+h1 {
+  font-size: variables.$h1-size;
+  margin-bottom: 36px;
+}
+h2 {
+  font-size: variables.$h2-size;
+  margin-bottom: 24px;
+}
+h3 {
+  font-size: variables.$h3-size;
+  margin-bottom: 16px;
+}
+h4 {
+  font-size: variables.$h4-size;
+  margin-bottom: 16px;
+}
+h5 {
+  font-size: variables.$h5-size;
+}
+h6 {
+  font-size: variables.$h1-size;
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: variables.$tab-paragraph-size;
+  }
+  h1 {
+    font-size: variables.$tab-h1-size;
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-size: variables.$tab-h2-size;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: variables.$tab-h3-size;
+    margin-bottom: 10px;
+  }
+  h4 {
+    font-size: variables.$tab-h4-size;
+  }
+  h5 {
+    font-size: variables.$tab-h5-size;
+  }
+  h6 {
+    font-size: variables.$tab-h6-size;
+  }
+  .sectionBottom {
+    margin-bottom: 80px;
+  }
+
+  .sectionPaddingTop {
+    padding-top: 80px;
+  }
+
+  .sectionPaddingBottom {
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  :root {
+    h1 {
+      font-size: variables.$mob-h1-size;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: variables.$mob-h2-size;
+      margin-bottom: 16px;
+    }
+    h3 {
+      font-size: variables.$mob-h3-size;
+      margin-bottom: 8px;
+    }
+    h4 {
+      font-size: variables.$mob-h4-size;
+      margin-bottom: 6px;
+    }
+    h5 {
+      font-size: variables.$mob-h5-size;
+    }
+    h6 {
+      font-size: variables.$mob-h6-size;
+    }
+    .sectionBottom {
+      margin-bottom: 60px;
+    }
+
+    .sectionPaddingTop {
+      padding-top: 60px;
+    }
+
+    .sectionPaddingBottom {
+      padding-bottom: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  section {
+    article.article-content,
+    footer {
+      z-index: 10;
+      padding: 0 10px;
+      width: 100%;
+      max-width: variables.$max-width;
+    }
+  }
+}

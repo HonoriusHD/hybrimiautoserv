@@ -1,0 +1,10 @@
+@use './variables';
+
+.card_text_only {
+  position: absolute;
+  bottom: 24px;
+  left: 5%;
+  background-color: #03050eda;
+  padding: 24px;
+  width: 80%;
+}

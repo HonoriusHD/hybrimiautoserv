@@ -1,0 +1,11 @@
+.card_text_over_image {
+  position: relative;
+  width: fit-content;
+}
+
+@media screen and (max-width: 900px) {
+  .card_text_over_image {
+    position: relative;
+    width: 100%;
+  }
+}

@@ -1,0 +1,29 @@
+@use './variables';
+
+.services {
+  background-color: variables.$background-color;
+  @include variables.flexProps(column, center, center);
+}
+
+.cards {
+  --gridColumns: 1;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(var(--gridColumns), 1fr);
+  margin: 60px auto 100px;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    --gridColumns: 2;
+  }
+}
+
+@media (min-width: 1300px) {
+  .cards {
+    --gridColumns: 3;
+  }
+}

@@ -1,0 +1,63 @@
+@use './variables';
+
+.contacts_wrapper {
+  position: relative;
+  background-color: variables.$background-color;
+  z-index: 10;
+  border: 1px solid rgb(71, 0, 0);
+  @include variables.flexProps(row, space-between, center);
+  padding: 20px 60px;
+  box-shadow: 5px 5px 13px rgb(71, 0, 0);
+  -moz-box-shadow: 5px 5px 13px rgb(71, 0, 0);
+  -webkit-box-shadow: 5px 5px 13px rgb(71, 0, 0);
+  margin-bottom: 160px;
+  border-radius: 10px;
+  .contacts {
+    p {
+      margin: 10px 0 10px;
+    }
+    h4 {
+      color: variables.$headers-color;
+    }
+    display: inline-block;
+    border-bottom: 2px solid variables.$tertiary-color;
+  }
+  .contact_lines_between {
+    height: 100px;
+    background-color: #d9d9d93d;
+    width: 1px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contacts_wrapper {
+    @include variables.flexProps(column, flex-start, flex-start);
+    padding: 0px 10px;
+    width: 400px;
+    .contacts {
+      margin: 15px 0;
+      p {
+        margin: 0px 0 4px;
+      }
+      h4 {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .contact_lines_between {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts_wrapper {
+    margin-bottom: 80px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .contacts_wrapper {
+    margin-bottom: 60px;
+  }
+}

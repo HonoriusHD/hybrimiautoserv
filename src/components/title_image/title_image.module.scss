@@ -1,0 +1,8 @@
+@use './variables';
+
+@media screen and (max-width: 900px) {
+  .title_image {
+    padding-bottom: 30px;
+    width: 100%;
+  }
+}

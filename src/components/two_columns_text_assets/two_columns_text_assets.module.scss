@@ -1,0 +1,60 @@
+@use './variables';
+
+.header {
+  position: relative;
+  width: 100%;
+  @include variables.flexProps(row, space-between, center);
+
+  .left_side {
+    flex: 1;
+    position: relative;
+  }
+
+  .assets_side {
+    z-index: 10;
+    flex: 1;
+    position: relative;
+    .image_wrapper {
+      position: relative;
+      height: 450px;
+    }
+  }
+}
+.reverseColumns {
+  flex-direction: row-reverse;
+}
+
+// .elementsSizes{
+//     .assets_side{
+//         .image_wrapper{
+//             position: relative;
+//             height: 400px;
+//         }
+
+//     }
+// }
+.paddingBottom100 {
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 1100px) {
+  .header {
+    @include variables.flexProps(column, space-between, center);
+    .left_side {
+      flex: 1;
+      position: relative;
+      margin-bottom: 40px;
+    }
+  }
+  .paddingBottom100 {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .header {
+    .left_side {
+      margin-bottom: 30px;
+    }
+  }
+}

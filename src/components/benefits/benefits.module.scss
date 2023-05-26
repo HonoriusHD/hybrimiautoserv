@@ -1,0 +1,32 @@
+@use './variables';
+
+.benefits {
+  @include variables.flexProps(column, space-between, flex-start);
+  .benefit_cards {
+    @include variables.flexProps(row, space-between, flex-start);
+    .benefit_card {
+      margin-top: 16px;
+      width: 24%;
+      p {
+        color: variables.$secondary-color-two;
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .benefits {
+    .benefit_cards {
+      @include variables.flexProps(column, space-between, flex-start);
+      .benefit_card {
+        margin-top: 24px;
+        width: 100%;
+        p {
+          color: variables.$secondary-color-two;
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@use './variables';
+
+.hero {
+  @include variables.flexProps(column, center, center);
+  position: relative;
+  min-height: calc(100vh - 80px);
+  margin-top: -10px;
+  background-color: variables.$background-color;
+  .children {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    z-index: 1;
+  }
+  .introduction_data {
+    position: relative;
+    margin-top: 100px;
+  }
+  .company_expertise {
+    position: relative;
+  }
+  .company_expertise_areas {
+    @include variables.flexProps(row, space-between, center);
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .hero {
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .introduction_data {
+    @include variables.flexProps(column, center, center);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero {
+    .company_expertise_areas {
+      @include variables.flexProps(column, space-between, center);
+      margin-top: 30px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .hero {
+    margin-top: 10px;
+    .company_expertise_areas {
+      margin-top: 30px;
+    }
+  }
+}

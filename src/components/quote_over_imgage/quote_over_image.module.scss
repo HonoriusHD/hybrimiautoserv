@@ -1,0 +1,38 @@
+@use './variables';
+
+.content {
+  position: relative;
+  background-color: red;
+  @include variables.flexProps(row, center, center);
+}
+.transparentBg {
+  background-color: rgba(0, 0, 0, 0.608);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.content_text {
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  h4 {
+    margin-top: 30px;
+    color: variables.$tertiary-color;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content_text {
+    width: 95%;
+    h3 {
+      font-size: 22px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+  }
+}
