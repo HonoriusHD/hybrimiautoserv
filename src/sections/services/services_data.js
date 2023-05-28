@@ -1,71 +1,81 @@
-import diagnoza from 'assets/services_images/diagnoza.jpeg';
+import diagnoza from "assets/services_images/diagnoza.jpeg";
+import testareHybrid from "assets/services_images/hybrid.jpeg";
+import intretinere from "assets/services_images/intretinere.jpeg";
+import achizitie from "assets/services_images/achizitie.jpeg";
+import wheels from "assets/services_images/wheels.jpg";
+import navigation from "assets/services_images/navigation.jpeg";
+import temperature from "assets/services_images/temperature.jpeg";
+import sell from "assets/services_images/sell.jpg";
+import papers from "assets/services_images/papers.jpg";
 
 export const ServicesData = [
   {
     id: 1,
-    serviceName: setServiceText('Diagnoza ', 'computerizata'),
+    serviceName: setServiceText("Diagnoza ", "computerizata"),
     serviceImage: diagnoza,
   },
   {
     id: 2,
     serviceName: setServiceText(
-      'Testare a sistemului ',
-      'electric al autovehiculelor'
+      "Testare a sistemului ",
+      "electric al autovehiculelor(la masini Hybrid)"
     ),
-    serviceImage: diagnoza,
+    serviceImage: testareHybrid,
   },
   {
     id: 3,
     serviceName: setServiceText(
-      'Lucrari de intretinere si  ',
-      'reparatie (revizii, adaugare freon, reglare faruri, test baterie, inlocuire ambreiaj/volanta).'
+      "Lucrari de intretinere si  ",
+      "reparatie (revizii, adaugare freon, reglare faruri, test baterie, inlocuire ambreiaj/volanta)."
     ),
-    serviceImage: diagnoza,
+    serviceImage: intretinere,
   },
   {
     id: 4,
     serviceName: setServiceText(
-      'Verificare in vederea  ',
-      'achizitiei de autovehicul'
+      "Verificare in vederea ",
+      "achizitiei de autovehicul"
     ),
-    serviceImage: diagnoza,
+    serviceImage: achizitie,
   },
   {
     id: 5,
     serviceName: setServiceText(
-      'Service roti  ',
-      '(vulcanizare, inlocuire anvelope, echilibrare roti)'
+      "Service roti  ",
+      "(vulcanizare, inlocuire anvelope, echilibrare roti)"
     ),
-    serviceImage: diagnoza,
+    serviceImage: wheels,
   },
   {
     id: 6,
-    serviceName: setServiceText(
-      'Consilierea si sfatuirea ',
-      ' cu clientul inainte de efectuarea oricarei lucrari suplimentare'
-    ),
-    serviceImage: diagnoza,
+    serviceName: setServiceText("Montare ", " navigații și camere marșarier"),
+    serviceImage: navigation,
   },
   {
     id: 7,
-    serviceName: setServiceText(
-      'Vanzarea de piese ',
-      'necesare pentru inlocuiri'
-    ),
-    serviceImage: diagnoza,
+    serviceName: setServiceText("Incarcare", "clima"),
+    serviceImage: temperature,
   },
   {
     id: 8,
-    serviceName: setServiceText('Incheierea de polite ', 'RCA/CASCO'),
-    serviceImage: diagnoza,
+    serviceName: setServiceText(
+      "Vanzarea de piese ",
+      "necesare pentru inlocuiri"
+    ),
+    serviceImage: sell,
+  },
+  {
+    id: 9,
+    serviceName: setServiceText("Incheierea de polite ", "RCA/CASCO"),
+    serviceImage: papers,
   },
 ];
 
 function setServiceText(accentColorText, bodyColorText) {
   return (
     <>
-      <span style={{ color: 'red' }}>{accentColorText}</span>
-      <span style={{ color: '#FEFEFE' }}> {bodyColorText}</span>
+      <span style={{ color: "red" }}>{accentColorText}</span>
+      <span style={{ color: "#FEFEFE" }}> {bodyColorText}</span>
     </>
   );
 }
@@ -73,8 +83,9 @@ function setServiceText(accentColorText, bodyColorText) {
 export const serviceTitle = function () {
   return (
     <>
-      <span style={{ color: '#FEFEFE' }}>Lorem ipsum es machile de </span>
-      <span style={{ color: 'red' }}>adepe los</span>
+      <span style={{ color: "#FEFEFE" }}>Descopera </span>
+      <span style={{ color: "red" }}>serviciile </span>
+      <span style={{ color: "#FEFEFE" }}>noastre </span>
     </>
   );
 };

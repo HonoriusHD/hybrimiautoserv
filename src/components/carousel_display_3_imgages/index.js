@@ -32,7 +32,7 @@ function CarouselDisplay3Imgages() {
               key={serviceImage.id}
               image={serviceImage.carouselImage}
               objectFit="cover"
-              imageSize="smallCardSize"
+              imageSize="carouselImages"
               alt="Aceasta este o reprezentare ilustrativa ce face referire la un services auto"
             />
           );

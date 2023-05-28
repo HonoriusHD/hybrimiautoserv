@@ -9,7 +9,7 @@ function CardTextOverImage({ image, text, alt, headerType }) {
       <ImageComponent
         image={image}
         objectFit="cover"
-        imageSize="smallCardSize"
+        imageSize="serviceCardSize"
         alt={alt}
       />
       <CardTextOnly title={text} headerType={headerType} />

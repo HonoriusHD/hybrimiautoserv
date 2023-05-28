@@ -2,7 +2,6 @@
 
 .content {
   position: relative;
-  background-color: red;
   @include variables.flexProps(row, center, center);
 }
 .transparentBg {
@@ -29,7 +28,7 @@
   .content_text {
     width: 95%;
     h3 {
-      font-size: 22px;
+      font-size: 20px;
     }
     h4 {
       font-size: 18px;

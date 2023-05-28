@@ -1,23 +1,23 @@
-import { Link, animateScroll as scroll } from 'react-scroll';
-import { useState } from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
+import { useState } from "react";
 
-import { Sling as Hamburger } from 'hamburger-react';
+import { Sling as Hamburger } from "hamburger-react";
 
-import styles from './header.module.scss';
-import ImageComponent from '../image_component';
+import styles from "./header.module.scss";
+import ImageComponent from "../image_component";
 
-import { useContext } from 'react';
-import { ModalContext } from 'pages';
+import { useContext } from "react";
+import { ModalContext } from "pages";
 
-import logo from 'assets/Logo_site.png';
+import logo from "assets/Logo_site.png";
 
 const Header = () => {
-  const [isOpen, setOpen] = useState('openMenu');
+  const [isOpen, setOpen] = useState("openMenu");
 
   const { handleModalVisibility } = useContext(ModalContext);
 
   const toogleMenu = () => {
-    let toogled = isOpen == 'openMenu' ? '' : 'openMenu';
+    let toogled = isOpen == "openMenu" ? "" : "openMenu";
     return setOpen(toogled);
   };
   return (
@@ -25,7 +25,7 @@ const Header = () => {
       <article>
         <div className={styles.logo}>
           <Link
-            to='hero'
+            to="hero"
             spy={true}
             smooth={true}
             offset={-70}
@@ -34,9 +34,9 @@ const Header = () => {
           >
             <ImageComponent
               image={logo}
-              objectFit='cover'
-              imageSize='logoSize'
-              alt='Acesta este lopo-ul site-ului'
+              objectFit="cover"
+              imageSize="logoSize"
+              alt="Acesta este lopo-ul site-ului"
             />
           </Link>
         </div>
@@ -44,7 +44,7 @@ const Header = () => {
           <ul>
             <li>
               <Link
-                to='hero'
+                to="hero"
                 spy={true}
                 smooth={true}
                 offset={-80}
@@ -56,8 +56,8 @@ const Header = () => {
             </li>
             <li>
               <Link
-                activeClass='active'
-                to='about'
+                activeClass="active"
+                to="about"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -69,8 +69,8 @@ const Header = () => {
             </li>
             <li>
               <Link
-                activeClass='active'
-                to='services'
+                activeClass="active"
+                to="services"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -82,8 +82,8 @@ const Header = () => {
             </li>
             <li>
               <Link
-                activeClass='active'
-                to='process'
+                activeClass="active"
+                to="process"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -95,8 +95,8 @@ const Header = () => {
             </li>
             <li>
               <Link
-                activeClass='active'
-                to='contact'
+                activeClass="active"
+                to="contact"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -119,8 +119,8 @@ const Header = () => {
             // toggled={isOpen}
             toggle={() => toogleMenu()}
             size={29}
-            color='white'
-            label='Show menu'
+            color="white"
+            label="Show menu"
             hideOutline={false}
           />
         </div>

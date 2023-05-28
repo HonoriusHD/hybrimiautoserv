@@ -6,11 +6,14 @@
   min-height: calc(100vh - 80px);
   margin-top: -10px;
   background-color: variables.$background-color;
+
+
   .children {
     position: absolute;
-    top: 30%;
+    top:0;
     right: 0;
     z-index: 1;
+    height:100px;
   }
   .introduction_data {
     position: relative;
@@ -20,7 +23,7 @@
     position: relative;
   }
   .company_expertise_areas {
-    @include variables.flexProps(row, space-between, center);
+    @include variables.flexProps(row, space-around, center);
     margin-top: 60px;
   }
 }

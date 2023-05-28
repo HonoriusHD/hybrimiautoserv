@@ -1,20 +1,38 @@
-import style from './footer.module.scss';
+import style from "./footer.module.scss";
 
-import sal from 'assets/SOL.png';
-import sol from 'assets/SAL.png';
-import { Link } from 'react-scroll';
+import sal from "assets/SOL.png";
+import sol from "assets/SAL.png";
+import { Link } from "react-scroll";
 
-import ImageComponent from 'components/image_component';
+import { AiOutlineInstagram } from "react-icons/ai";
+import { RiFacebookCircleLine } from "react-icons/ri";
+
+import ImageComponent from "components/image_component";
 
 function Footer() {
+  const openSol = () => {
+    window.open("https://anpc.ro/ce-este-sal/");
+  };
+  const openSal = () => {
+    window.open(
+      "https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO"
+    );
+  };
   return (
-    <section id='services' className={`${style.footer}`}>
+    <section id="footer" className={`${style.footer}`}>
       <footer>
         <div className={style.footer_logo}>Hybrimi Auto</div>
         <div className={style.footer_info}>
           <div className={style.social_info}>
             <p>Social media</p>
-            <p className={style.footer_text}>Instagram</p>
+            <div className={style.social_links}>
+              <a href="https://www.google.ro" target="_blank" rel="noreferrer">
+                <RiFacebookCircleLine size="40" />
+              </a>
+              <a href="https://www.google.ro" target="_blank" rel="noreferrer">
+                <AiOutlineInstagram size="40" />
+              </a>
+            </div>
           </div>
           <div className={style.menu_info}>
             <p>Linkuri utile</p>
@@ -22,7 +40,7 @@ function Footer() {
               <div className={style.footer_nav}>
                 <li>
                   <Link
-                    to='hero'
+                    to="hero"
                     spy={true}
                     smooth={true}
                     offset={-80}
@@ -33,8 +51,8 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    activeClass='active'
-                    to='about'
+                    activeClass="active"
+                    to="about"
                     spy={true}
                     smooth={true}
                     offset={-220}
@@ -45,8 +63,8 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    activeClass='active'
-                    to='services'
+                    activeClass="active"
+                    to="services"
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -57,8 +75,8 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    activeClass='active'
-                    to='process'
+                    activeClass="active"
+                    to="process"
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -69,8 +87,8 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    activeClass='active'
-                    to='contact'
+                    activeClass="active"
+                    to="contact"
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -89,25 +107,34 @@ function Footer() {
         </div>
         <div className={style.legal}>
           <div className={style.legal_links}>
-            <p>Termeni</p>
-            <p>Conditii</p>
+            <p>Termeni si Conditii</p>
             <p>Credits</p>
           </div>
           <div className={style.legal_icons}>
-            <div className={style.legal_icon}>
+            <div
+              className={style.legal_icon}
+              onClick={() => {
+                openSol();
+              }}
+            >
               <ImageComponent
                 image={sol}
-                objectFit='cover'
-                imageSize='legalSize'
-                alt='reprezinta anpc in format png'
+                objectFit="cover"
+                imageSize="legalSize"
+                alt="reprezinta anpc in format png"
               />
             </div>
-            <div className={style.legal_icon}>
+            <div
+              className={style.legal_icon}
+              onClick={() => {
+                openSal();
+              }}
+            >
               <ImageComponent
                 image={sal}
-                objectFit='cover'
-                imageSize='legalSize'
-                alt='reprezinta anpc in format png'
+                objectFit="cover"
+                imageSize="legalSize"
+                alt="reprezinta anpc in format png"
               />
             </div>
           </div>

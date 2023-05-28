@@ -12,7 +12,7 @@
       color: variables.$footer-title-color;
       font-weight: variables.$footer-weight;
       font-size: 24px;
-      margin: 20px 0;
+      margin: 25px 0;
       width: 100%;
     }
     .footer_info {
@@ -30,9 +30,19 @@
       .menu_info,
       .developer_info {
         .footer_text {
-          padding-top: 12px;
-          color: variables.$footer-title-color;
+          padding-top: 20px;
           font-weight: variables.$footer-weight;
+        }
+      }
+      .social_info{
+        .social_links{
+          margin-top: 10px;
+
+          a{
+            color: variables.$footer-title-color;
+            font-weight: variables.$footer-weight;
+            margin-right:12px;
+          }
         }
       }
       padding: 50px 0;
@@ -54,6 +64,7 @@
       .legal_icons {
         @include variables.flexProps(row, space-around, center);
         width: 100%;
+        cursor: pointer;
       }
     }
   }
@@ -73,7 +84,7 @@
   .footer {
     footer {
       padding-top: 0px;
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       .footer_logo {
         @include variables.flexProps(column, flex-start, flex-start);
       }
@@ -83,16 +94,16 @@
           .footer_nav {
             @include variables.flexProps(column, flex-start, flex-start);
             li {
-              margin: 0;
+              margin: 6px 0;
             }
           }
         }
         .social_info,
         .menu_info,
         .developer_info {
-          margin-bottom: 20px;
+          margin-bottom: 25px;
           .footer_text {
-            padding-top: 2px;
+            padding-top: 8px;
           }
         }
         padding: 0;
