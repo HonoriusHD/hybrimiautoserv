@@ -7,7 +7,7 @@ import TitleImage from "components/title_image";
 import ImageComponent from "components/image_component";
 
 import { HeroData } from "./hero_data";
-import heroImage from "assets/heroImage.jpg";
+import heroImage from "assets/heroImg.jpg";
 import heroLinesShape from "assets/heroLinesShape.png";
 
 function Hero() {

@@ -22,7 +22,7 @@ function Contact() {
           <div className={styles.contact_info_wrapper}>
             {ContactData.contactText.map((contact) => {
               return (
-                <div className={styles.contactData}>
+                <div key={contact.id} className={styles.contactData}>
                   <p className={styles.contactTitle}>{contact.contactType}</p>
                   <h5 className={styles.contactParagraph}>{contact.contact}</h5>
                 </div>
@@ -38,7 +38,7 @@ function Contact() {
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            style={{ border: 0, borderRadius: 10 }}
+            style={{ border: 0, borderRadius: 14 }}
             title="map"
             aria-hidden="false"
             tabIndex="0"

@@ -6,17 +6,17 @@ export const HeroData = {
   heroTitle: function () {
     return (
       <>
-        Lorem ipsum es machile de{" "}
-        <span style={{ color: "red" }}>adepe los</span> perrron
+        Dacă mașina ta are o problemă, la noi vei găsi
+        <span style={{ color: "red" }}> soluția </span>
       </>
     );
   },
   heroParagraphs: function () {
     return (
       <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley.
+        Diversitatea autovehiculelor din ziua de azi nu reprezintă o problemă
+        pentru service-ul nostru. Tineri, ambitiosi și cu dorinta de a ajuta,
+        garantăm siguranța și profesionalismul de care mașina ta are nevoie.
       </p>
     );
   },

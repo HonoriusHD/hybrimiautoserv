@@ -9,7 +9,7 @@ import { ServicesData } from "./services_data";
 
 function Services() {
   const quote =
-    "“ Aici sa fie ceva text cu slogan motivational cumva ceva gasim ca sa atragem si prin sectiunea asta si sa mai diversificam ”";
+    "“ Nu lăsa pe mâine ce poți repara astăzi, s-ar putea să te coste mai mult. ”";
   const author = "Echipa Hybrimiautoserv";
 
   return (

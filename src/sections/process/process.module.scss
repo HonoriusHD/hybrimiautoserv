@@ -48,6 +48,12 @@
         border: 1px solid #fefefe27;
         padding: 30px;
         width: 375px;
+        transition: 0.2s ease-in-out;
+       
+        &:hover{
+          background-color: rgba(0, 0, 0, 0.575);
+          transition: 0.2s ease-in-out;
+        }
         h3 {
           border: 1px solid #fefefe;
           width: fit-content;

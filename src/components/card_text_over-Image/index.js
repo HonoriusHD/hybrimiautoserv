@@ -6,6 +6,7 @@ import CardTextOnly from "../card_text_only";
 function CardTextOverImage({ image, text, alt, headerType }) {
   return (
     <div className={style.card_text_over_image}>
+      <div className={style.overlay_bg} />
       <ImageComponent
         image={image}
         objectFit="cover"

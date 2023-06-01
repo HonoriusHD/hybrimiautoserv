@@ -20,7 +20,7 @@ export const ContactData = {
     {
       id: 1,
       contactType: "Telefon",
-      contact: "0743 398 109",
+      contact: "+40 (758) 840 708",
     },
     {
       id: 2,
@@ -31,6 +31,11 @@ export const ContactData = {
       id: 3,
       contactType: "Adresa",
       contact: "Comuna Apahida, Strada Vlad Tepes nr. 4",
+    },
+    {
+      id: 4,
+      contactType: "Program de lucru",
+      contact: "L-V 09:00-18:00, S: Cu programare, D: Inchis",
     },
   ],
 };

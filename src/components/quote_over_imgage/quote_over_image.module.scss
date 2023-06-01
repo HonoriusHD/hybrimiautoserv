@@ -18,6 +18,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width:80%;
+  h3 {
+    font-size: 40px;
+  }
   h4 {
     margin-top: 30px;
     color: variables.$tertiary-color;
@@ -26,7 +30,7 @@
 
 @media screen and (max-width: 768px) {
   .content_text {
-    width: 95%;
+    width: 90%;
     h3 {
       font-size: 20px;
     }

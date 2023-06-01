@@ -60,6 +60,7 @@
         margin-bottom: 20px;
         width: 70%;
         @include variables.flexProps(row, space-between, center);
+        cursor: pointer;
       }
       .legal_icons {
         @include variables.flexProps(row, space-around, center);
