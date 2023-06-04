@@ -17,6 +17,7 @@ function Two_columns_text_assets({
   imageSize,
   alt,
   children,
+  customWidth,
 }) {
   return (
     <header
@@ -34,6 +35,7 @@ function Two_columns_text_assets({
           paragraphsColor={paragraphsColor}
           textMarginLeft={textMarginLeft}
           textMarginRight={textMarginRight}
+          customWidth={customWidth}
         />
       </div>
       <div className={style.assets_side}>

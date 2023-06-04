@@ -10,7 +10,7 @@ import { ServicesData } from "./services_data";
 function Services() {
   const quote =
     "“ Nu lăsa pe mâine ce poți repara astăzi, s-ar putea să te coste mai mult. ”";
-  const author = "Echipa Hybrimiautoserv";
+  const author = "Echipa Hybrimi Auto";
 
   return (
     <section
@@ -27,7 +27,7 @@ function Services() {
         <div className={style.cards}>
           {ServicesData.map((data) => {
             return (
-              <div>
+              <div key={data.id}>
                 <CardTextOverImage
                   key={data.id}
                   image={data.serviceImage}

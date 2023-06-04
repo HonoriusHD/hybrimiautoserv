@@ -8,7 +8,7 @@ import insfin from "assets/insfin.jpg";
 import otp from "assets/otp.jpg";
 import ama from "assets/ama.jpg";
 
-import { Sling as Hamburger } from "hamburger-react";
+import { Turn as Hamburger } from "hamburger-react";
 
 import styles from "./header.module.scss";
 import ImageComponent from "../image_component";

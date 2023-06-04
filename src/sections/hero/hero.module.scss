@@ -39,7 +39,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .hero {
     .company_expertise_areas {
       @include variables.flexProps(column, space-between, center);

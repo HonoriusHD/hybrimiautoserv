@@ -131,7 +131,7 @@ function Footer() {
                 })()
               }
             >
-              Termeni si Conditii
+              Termeni și Condiții
             </p>
             <p>Credits</p>
           </div>

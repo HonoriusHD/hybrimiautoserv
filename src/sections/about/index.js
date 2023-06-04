@@ -30,7 +30,8 @@ function About() {
           objectFit="cover"
           imageSize="sectionSize"
           alt="Aceasta este o ilustratie a unei masini"
-          textMarginLeft="textMarginLeft"
+          // textMarginLeft="textMarginLeft"
+          customWidth="customWidth"
         />
         <Benefits headerType="h3" paragraphWidh="80%" />
       </article>

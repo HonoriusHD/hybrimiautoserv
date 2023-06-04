@@ -4,42 +4,42 @@ export const ProcessData = [
     number: 1,
     processTitle: "Programare",
     processContent:
-      "Clientul programeaza o intalnire pentru constatare (fie online fie la telefon sau direct la service).",
+      "Clientul programează o întâlnire pentru constatare (fie online fie la telefon sau direct la service).",
   },
   {
     id: 2,
     number: 2,
     processTitle: "Preluare si constatare",
     processContent:
-      "Cand  masina este adusa la constatare, de aici service-ul incepe sa se ocupe de tot: preluarea masinii, introducerea datelor in sistem (inclusiv cu solicitarile clientului, adica problemele ce clientul le sustine ca le are masina).",
+      "Când  mașina este adusă la constatare, de aici service-ul începe să se ocupe de tot: preluarea mașinii, introducerea datelor in sistem (inclusiv cu solicitările clientului, adică problemele ce clientul le susține că le are mașină).",
   },
   {
     id: 3,
     number: 3,
     processTitle: "Verificare",
     processContent:
-      "Odata intrata in service, se verifica zona/zonele cu probleme solicitate a fi reparate.",
+      "Odată intrată în service, se verifică zona/zonele cu probleme solicitate a fi reparate.",
   },
   {
     id: 4,
     number: 4,
     processTitle: "Proba de drum",
     processContent:
-      "Daca vizual nu se observa nimic, atunci se iese intr-o proba de drum cu masina.",
+      "Dacă vizual nu se observă nimic, atunci se iese într-o proba de drum cu mașina.",
   },
   {
     id: 5,
     number: 5,
-    processTitle: "Identificare probleme si reparatii",
+    processTitle: "Identificare probleme si reparații",
     processContent:
-      "Dupa ce problema a fost identificata, masina intra in reparatie. Acest procedeu consta in identificarea de piese necesare schimbarii sau remedierea problemei acestora (daca se poate face acest lucru), mai apoi se comanda piesele (service-ul se ocupa de tot ce inseamna comandat si montat).",
+      "După ce problema a fost identificată, mașina intră în reparație. Acest procedeu constă in identificarea de piese necesare schimbării sau remedierea problemei acestora, dacă se poate face acest lucru. Mai apoi se comandă piesele necesare înlocuirii. Aici nu trebuie să îți faci griji deoarece service-ul nostru se ocupă de tot ce înseamnă identificat, comandat și montat",
   },
   {
     id: 6,
     number: 6,
-    processTitle: "Predare masina",
+    processTitle: "Predare mașina",
     processContent:
-      "Odata ce toate lucrarile mentionate anterior au fost finalizate, masina este predata clientului.",
+      "Odată ce toate lucrările menționate anterior au fost finalizate, mașina este predată clientului, bineînțeles după realizarea tuturor testelor și verificărilor finale.",
   },
 ];
 
@@ -54,9 +54,9 @@ export const ProcessHeader = function () {
 export const ProcessSubHeader = function () {
   return (
     <p>
-      Procedeul de lucru este unul simplu dar si cel mai corect. Eventual mai
-      scris inca o propozitie sa arate mai nice si sa fie mai in ton cu
-      celelalte descrieri.
+      Procedeul de lucru este unul simplu dar și cel mai corect. În cazul în
+      care nu știai cum se desfășoară la noi activitatea, mai jos îți vom
+      prezența pașii prin care trece mașina ta cât timp este la noi.
     </p>
   );
 };

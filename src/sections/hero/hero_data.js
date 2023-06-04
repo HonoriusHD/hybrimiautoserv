@@ -15,7 +15,7 @@ export const HeroData = {
     return (
       <p>
         Diversitatea autovehiculelor din ziua de azi nu reprezintă o problemă
-        pentru service-ul nostru. Tineri, ambitiosi și cu dorinta de a ajuta,
+        pentru service-ul nostru. Tineri, ambițioși și cu dorința de a ajută,
         garantăm siguranța și profesionalismul de care mașina ta are nevoie.
       </p>
     );
@@ -31,15 +31,18 @@ export const HeroData = {
   companyExpertiseParagraphs: function () {
     return (
       <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s.
+        Dorința de a ajuta, experiența acumulată de-a lungul timpului, dar și
+        studiile în acest domeniu, ne fac să vă oferim un pachet de servicii de
+        cea mai înaltă calitate. Evoluția tehnologiei a creat un cadru propice
+        pentru depășirea oricăror probleme. Personalul nostru urmează studiile
+        și cursurile profesionale în continuare, acest fapt contribuind la
+        actualizarea informatiiilor legate de tipul tuturor autovehiculelor.
       </p>
     );
   },
   expertiseImages: [
-    { id: 1, title: "Masini electrice", carImage: electricImage },
-    { id: 2, title: "Masini hybrid", carImage: hybridImage },
-    { id: 3, title: "Masini pe benzina/diesel", carImage: fuelImage },
+    { id: 1, title: "Autovehicule electrice", carImage: electricImage },
+    { id: 2, title: "Autovehicule hybrid", carImage: hybridImage },
+    { id: 3, title: "Autovehicule pe benzină/diesel", carImage: fuelImage },
   ],
 };

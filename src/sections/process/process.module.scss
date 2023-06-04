@@ -7,7 +7,7 @@
   .process_wrapper {
     position: relative;
     margin: 60px auto 140px;
-    @include variables.flexProps(row, space-around, flex-start);
+    @include variables.flexProps(row, space-between, flex-start);
     flex-wrap: wrap;
     .card {
       margin-bottom: 40px;
@@ -47,7 +47,7 @@
         position: relative;
         border: 1px solid #fefefe27;
         padding: 30px;
-        width: 375px;
+        width: 400px;
         transition: 0.2s ease-in-out;
        
         &:hover{
@@ -65,9 +65,23 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1240px) {
   .process {
     .process_wrapper {
+      @include variables.flexProps(row, space-around, flex-start);
+      .card {
+        .process_card {
+         width: 450px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .process {
+    .process_wrapper {
+      @include variables.flexProps(row, flex-start, flex-start);
       margin: 50px auto 30px;
       .card {
         .process_card {

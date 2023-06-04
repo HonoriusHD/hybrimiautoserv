@@ -26,7 +26,7 @@
 }
 .smallCardSize {
   width: 96%;
-  height:240px;
+  height:280px;
   transition: 0.2s ease-out;
   border: 2px solid transparent;
   &:hover{
@@ -40,7 +40,6 @@
 }
 .carouselImages{
   width: 96%;
-  // height: 450px;
 }
 .serviceCardSize{
   width: 100%;
@@ -108,7 +107,16 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
+  .smallCardSize {
+    height:220px;
+    &:hover{
+      transform: initial;
+      transition: initial;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
   .smallCardSize {
     width: 100%;
     height: initial;

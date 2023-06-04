@@ -31,7 +31,7 @@ function Hero() {
           title={HeroData.companyExpertiseTitle()}
           paragraphs={HeroData.companyExpertiseParagraphs()}
           headerType="h2"
-          customWidth="customWidth"
+          customWidth="expertizaWidth"
         />
         <div className={styles.company_expertise_areas}>
           {HeroData.expertiseImages.map((data) => {

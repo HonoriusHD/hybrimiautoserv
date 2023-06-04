@@ -18,8 +18,8 @@ import {
 const contactFormTitle = function () {
   return (
     <>
-      Pentru programari, sugestii sau reclamatii, lasati-ne un
-      <span> mesaj</span> si va contactam cat mai repede.
+      Pentru programări, sugestii sau reclamații, lăsați-ne un
+      <span> mesaj</span> și va contactăm cât mai repede.
     </>
   );
 };
@@ -48,7 +48,7 @@ function ContactForm() {
       setValidations(true);
     } else {
       alert(
-        "Pentru a va putea oferi servicii de calitate, este necesara completarea coracta a tuturor datelor si bifarii acordului de prelucrare a datelor. Multumim"
+        "Pentru a va putea oferi servicii de calitate, este necesară completarea coracta a tuturor datelor și bifarii acordului de prelucrare a datelor. Mulțumim"
       );
       setValidations(false);
     }
@@ -178,7 +178,7 @@ function ContactForm() {
                   onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
                 <label>
-                  <p>Mesajul tau</p>
+                  <p>Mesajul tău</p>
                 </label>
               </div>
               <div className={style.checkProcessData}>
