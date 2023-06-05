@@ -211,3 +211,38 @@ export const FooterData = function () {
     </div>
   );
 };
+
+export const CreditsData = function () {
+  return (
+    <div>
+      <h1 style={{ color: "black" }}>Instrumente structurale</h1>
+      <p style={{ color: "black", marginTop: "20px" }}>
+        https://mfe.gov.ro/progresele-pocu-in-ultimul-semestru-12-miliarde-euro-apeluri-lansate-si-1-miliard-euro-contracte-semnate/instrumente_structurale/
+      </p>
+      <h1 style={{ color: "black" }}>Guvernul romaniei</h1>
+      <a
+        href="https://getlogovector.com/guvernul-romaniei-logo-vector-svg/"
+        target="_blank"
+      >
+        <img
+          style={{ width: "200px" }}
+          src="https://getlogovector.com/wp-content/uploads/2020/05/guvernul-romaniei-logo-vector.png"
+        />
+      </a>
+      <h1 style={{ color: "black" }}>Uniunea europeana</h1>
+      <a href="https://www.freepik.com/free-vector/illustration-european-union-flag_2922296.htm#query=ue%20logo&position=1&from_view=keyword&track=ais">
+        Image by rawpixel.com
+      </a>
+      on Freepik Image by <h1 style={{ color: "black" }}>Contact image</h1>
+      <a href="https://www.freepik.com/free-photo/young-business-man-working-her-desk-with-laptop-smartphone_21076020.htm#page=4&query=contact%20us&position=33&from_view=search&track=ais">
+        Freepik
+      </a>
+      <a href="https://pixabay.com/images/id-6943487/" target="_blank">
+        Image from PIXBAY
+      </a>
+      <a href="https://pixabay.com/images/id-7770695/" target="_blank">
+        Image from PIXBAY
+      </a>
+    </div>
+  );
+};

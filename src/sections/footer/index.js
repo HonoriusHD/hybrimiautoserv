@@ -12,7 +12,7 @@ import { ModalContext } from "pages";
 
 import ImageComponent from "components/image_component";
 
-import { FooterData } from "./footer_data";
+import { FooterData, CreditsData } from "./footer_data";
 
 function Footer() {
   const openSol = () => {
@@ -22,6 +22,9 @@ function Footer() {
     window.open(
       "https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO"
     );
+  };
+  const openDev = () => {
+    window.open("https://www.digitalstories.ro");
   };
 
   const { handleModalVisibility, updateModal } = useContext(ModalContext);
@@ -118,7 +121,14 @@ function Footer() {
           </div>
           <div className={style.developer_info}>
             <p>Realizat de</p>
-            <p className={style.footer_text}>Digital Stories</p>
+            <p
+              className={style.footer_text}
+              onClick={() => {
+                openDev();
+              }}
+            >
+              Digital Stories
+            </p>
           </div>
         </div>
         <div className={style.legal}>
@@ -133,7 +143,16 @@ function Footer() {
             >
               Termeni și Condiții
             </p>
-            <p>Credits</p>
+            <p
+              onClick={() =>
+                (function () {
+                  updateModal(CreditsData());
+                  handleModalVisibility();
+                })()
+              }
+            >
+              Credits
+            </p>
           </div>
           <div className={style.legal_icons}>
             <div

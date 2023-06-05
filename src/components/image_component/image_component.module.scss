@@ -7,7 +7,6 @@
 }
 .heroSize {
   top:-50px;
-  left:100px;
   height: 680px;
   width:1000px;
 }
@@ -69,10 +68,9 @@
   width: 200px;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
   .heroSize {
     top:-10px;
-     left:initial;
     height: 480px;
     width:700px;
   }
@@ -83,7 +81,6 @@
 }
 @media screen and (max-width: 1200px) {
   .heroSize {
-   
     height: 320px;
     width: 470px;
   }
