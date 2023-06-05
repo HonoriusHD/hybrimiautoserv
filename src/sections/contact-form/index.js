@@ -120,11 +120,7 @@ function ContactForm() {
           alt="Aceasta reprezinta o ilustratie specifica pentru o sectiune de contact"
         />
         <div className={style.form_wrapper}>
-          <TitleText
-            title={contactFormTitle()}
-            headerType="h4"
-            customWidth="custotWidth"
-          />
+          <TitleText title={contactFormTitle()} headerType="h4" />
           <div className={style.form}>
             <form ref={form} onSubmit={sendEmail}>
               <div className={style.input_box}>

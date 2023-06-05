@@ -24,7 +24,7 @@ export const HeroData = {
     return (
       <>
         Expertiza pentru
-        <span style={{ color: "red" }}> 3 tipuri</span> de monitorizari
+        <span style={{ color: "red" }}> 3 tipuri</span> de motorizari
       </>
     );
   },

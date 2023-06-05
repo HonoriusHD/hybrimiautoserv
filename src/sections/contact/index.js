@@ -32,7 +32,7 @@ function Contact() {
         </div>
         <div className={styles.map_wrapper}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1930.9957352543563!2d23.75261915607029!3d46.80745051567957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4749752af61ad88b%3A0xdca1de7bc742fefb!2sLa%20Daniel%20-%20Vulcanizare%2FSpalatorie%20auto%20self%20wash!5e0!3m2!1sro!2sro!4v1682415628618!5m2!1sro!2sro"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2730.535617115114!2d23.7547548!3d46.8134528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490ad2baa1135d%3A0xf61f85d2f730a68a!2sStrada%20Vlad%20%C5%A2epe%C5%9F%204%2C%20Apahida%20407035!5e0!3m2!1sro!2sro!4v1685940818663!5m2!1sro!2sro"
             width="100%"
             height="100%"
             allowFullScreen=""
