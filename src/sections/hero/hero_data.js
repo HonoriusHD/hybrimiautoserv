@@ -15,7 +15,7 @@ export const HeroData = {
     return (
       <p>
         Diversitatea autovehiculelor din ziua de azi nu reprezintă o problemă
-        pentru service-ul nostru. Tineri, ambițioși și cu dorința de a ajută,
+        pentru service-ul nostru. Tineri, ambițioși și cu dorința de a ajuta,
         garantăm siguranța și profesionalismul de care mașina ta are nevoie.
       </p>
     );
@@ -23,7 +23,7 @@ export const HeroData = {
   companyExpertiseTitle: function () {
     return (
       <>
-        Expertiza pentru
+        Expertiză pentru
         <span style={{ color: "red" }}> 3 tipuri</span> de motorizari
       </>
     );

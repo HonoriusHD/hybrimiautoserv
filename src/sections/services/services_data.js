@@ -80,7 +80,7 @@ function setServiceText(accentColorText, bodyColorText) {
 export const serviceTitle = function () {
   return (
     <>
-      <span style={{ color: "#FEFEFE" }}>Descopera </span>
+      <span style={{ color: "#FEFEFE" }}>Descoperă </span>
       <span style={{ color: "red" }}>serviciile </span>
       <span style={{ color: "#FEFEFE" }}>noastre </span>
     </>
