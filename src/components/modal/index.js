@@ -1,20 +1,20 @@
-import React, { useEffect } from 'react';
-import { ModalContext } from 'pages';
-import { useContext } from 'react';
-import { TfiClose } from 'react-icons/tfi';
+import React, { useEffect } from "react";
+import { ModalContext } from "pages";
+import { useContext } from "react";
+import { TfiClose } from "react-icons/tfi";
 
-import styles from './modal.module.scss';
+import styles from "./modal.module.scss";
 
 function Modal({ children, isModalVisible }) {
   const { handleModalVisibility } = useContext(ModalContext);
   const blockBody = () => {
-    document.body.style.height = '100vh';
-    document.body.style.overflow = 'hidden';
+    document.body.style.height = "auto";
+    document.body.style.overflow = "scroll";
   };
   useEffect(() => {
-    isModalVisible === 'openModal'
+    isModalVisible === "openModal"
       ? blockBody()
-      : (document.body.style.overflow = 'initial');
+      : (document.body.style.overflow = "initial");
   });
   return (
     <div className={`${styles.modal} ${styles[isModalVisible]}`}>
@@ -24,7 +24,7 @@ function Modal({ children, isModalVisible }) {
           onClick={() => handleModalVisibility()}
         >
           <div className={styles.close_button}>
-            <TfiClose color='black' fontSize='25px' className='close-icon' />
+            <TfiClose color="black" fontSize="25px" className="close-icon" />
           </div>
         </div>
         {children}

@@ -7,7 +7,12 @@ import { Link } from "react-scroll";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { RiFacebookCircleLine } from "react-icons/ri";
 
+import { useContext } from "react";
+import { ModalContext } from "pages";
+
 import ImageComponent from "components/image_component";
+
+import { FooterData, CreditsData } from "./footer_data";
 
 function Footer() {
   const openSol = () => {
@@ -18,6 +23,12 @@ function Footer() {
       "https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO"
     );
   };
+  const openDev = () => {
+    window.open("https://www.digitalstories.ro");
+  };
+
+  const { handleModalVisibility, updateModal } = useContext(ModalContext);
+
   return (
     <section id="footer" className={`${style.footer}`}>
       <footer>
@@ -26,10 +37,18 @@ function Footer() {
           <div className={style.social_info}>
             <p>Social media</p>
             <div className={style.social_links}>
-              <a href="https://www.google.ro" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.facebook.com/profile.php?id=100091796210663"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <RiFacebookCircleLine size="40" />
               </a>
-              <a href="https://www.google.ro" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.instagram.com/hybrimiservice/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <AiOutlineInstagram size="40" />
               </a>
             </div>
@@ -102,13 +121,38 @@ function Footer() {
           </div>
           <div className={style.developer_info}>
             <p>Realizat de</p>
-            <p className={style.footer_text}>Digital Stories</p>
+            <p
+              className={style.footer_text}
+              onClick={() => {
+                openDev();
+              }}
+            >
+              Digital Stories
+            </p>
           </div>
         </div>
         <div className={style.legal}>
           <div className={style.legal_links}>
-            <p>Termeni si Conditii</p>
-            <p>Credits</p>
+            <p
+              onClick={() =>
+                (function () {
+                  updateModal(FooterData());
+                  handleModalVisibility();
+                })()
+              }
+            >
+              Termeni și Condiții
+            </p>
+            <p
+              onClick={() =>
+                (function () {
+                  updateModal(CreditsData());
+                  handleModalVisibility();
+                })()
+              }
+            >
+              Credits
+            </p>
           </div>
           <div className={style.legal_icons}>
             <div

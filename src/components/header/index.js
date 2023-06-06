@@ -1,7 +1,14 @@
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import { useState } from "react";
 
-import { Sling as Hamburger } from "hamburger-react";
+import { ue_text } from "components/modal/ue_text";
+import ue from "assets/ue.jpg";
+import gvn from "assets/gvn.jpg";
+import insfin from "assets/insfin.jpg";
+import otp from "assets/otp.jpg";
+import ama from "assets/ama.jpg";
+
+import { Turn as Hamburger } from "hamburger-react";
 
 import styles from "./header.module.scss";
 import ImageComponent from "../image_component";
@@ -14,11 +21,53 @@ import logo from "assets/Logo_site.png";
 const Header = () => {
   const [isOpen, setOpen] = useState("openMenu");
 
-  const { handleModalVisibility } = useContext(ModalContext);
+  const { handleModalVisibility, updateModal } = useContext(ModalContext);
 
   const toogleMenu = () => {
-    let toogled = isOpen == "openMenu" ? "" : "openMenu";
+    let toogled = isOpen === "openMenu" ? "" : "openMenu";
     return setOpen(toogled);
+  };
+
+  const modalContent = function () {
+    return (
+      <>
+        <div className="institutionIcons">
+          <ImageComponent
+            image={ue}
+            objectFit="contain"
+            imageSize="autoHeight"
+            alt="Acesta reprezinta sigla unei institutii din Romania ce apartine de contextul implementarii proiectului."
+          />
+          <ImageComponent
+            image={gvn}
+            objectFit="contain"
+            imageSize="autoHeight"
+            alt="Acesta reprezinta sigla unei institutii din Romania ce apartine de contextul implementarii proiectului."
+          />
+          <ImageComponent
+            image={insfin}
+            objectFit="contain"
+            imageSize="autoHeight"
+            alt="Acesta reprezinta sigla unei institutii din Romania ce apartine de contextul implementarii proiectului."
+          />
+        </div>
+        {ue_text()}
+        <div className="institutionIcons">
+          <ImageComponent
+            image={ama}
+            objectFit="contain"
+            imageSize="autoHeight"
+            alt="Acesta reprezinta sigla unei entitati din Romania ce apartine de contextul implementarii proiectului."
+          />
+          <ImageComponent
+            image={otp}
+            objectFit="contain"
+            imageSize="autoHeight"
+            alt="Acesta reprezinta sigla unei entitati din Romania ce apartine de contextul implementarii proiectului."
+          />
+        </div>
+      </>
+    );
   };
   return (
     <header className={styles.header}>
@@ -108,7 +157,12 @@ const Header = () => {
             </li>
             <li
               className={styles.ue_project}
-              onClick={() => handleModalVisibility()}
+              onClick={() =>
+                (function () {
+                  updateModal(modalContent());
+                  handleModalVisibility();
+                })()
+              }
             >
               Proiect UE
             </li>
@@ -116,7 +170,7 @@ const Header = () => {
         </nav>
         <div className={styles.hamburger_menu}>
           <Hamburger
-            // toggled={isOpen}
+            toggled={!isOpen}
             toggle={() => toogleMenu()}
             size={29}
             color="white"

@@ -17,7 +17,7 @@ export const BenefitsData = [
       />
     ),
     subtitle: "",
-    paragraph: "Personal tanar si calificat dornic de oferirea calitatii.",
+    paragraph: "Personal tânăr și calificat dornic de oferirea calității.",
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ export const BenefitsData = [
       />
     ),
     subtitle: "",
-    paragraph: "Preturi cinstite fara costuri ascunse.",
+    paragraph: "Prețuri cinstite fără costuri ascunse.",
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ export const BenefitsData = [
       />
     ),
     subtitle: "",
-    paragraph: "Echipamente folosite noi si de ultima generatie.",
+    paragraph: "Echipamente folosite noi și de ultima generație.",
   },
   {
     id: 1,
@@ -62,7 +62,7 @@ export const BenefitsData = [
       />
     ),
     subtitle: "",
-    paragraph: "Promptitudine in raspuns.",
+    paragraph: "Promptitudine in răspuns.",
   },
 ];
 

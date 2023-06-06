@@ -8,7 +8,7 @@ function Contacts(border) {
       {ContactsData.map((contact) => {
         return (
           <>
-            <div key={contact.id} className={styles.contacts}>
+            <div className={styles.contacts}>
               <h4>{contact.contactTitle}</h4>
               <p>{contact.contact}</p>
             </div>

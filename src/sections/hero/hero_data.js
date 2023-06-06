@@ -6,40 +6,43 @@ export const HeroData = {
   heroTitle: function () {
     return (
       <>
-        Lorem ipsum es machile de{" "}
-        <span style={{ color: "red" }}>adepe los</span> perrron
+        Dacă mașina ta are o problemă, la noi vei găsi
+        <span style={{ color: "red" }}> soluția </span>
       </>
     );
   },
   heroParagraphs: function () {
     return (
       <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley.
+        Diversitatea autovehiculelor din ziua de azi nu reprezintă o problemă
+        pentru service-ul nostru. Tineri, ambițioși și cu dorința de a ajuta,
+        garantăm siguranța și profesionalismul de care mașina ta are nevoie.
       </p>
     );
   },
   companyExpertiseTitle: function () {
     return (
       <>
-        Expertiza pentru
-        <span style={{ color: "red" }}> 3 tipuri</span> de monitorizari
+        Expertiză pentru
+        <span style={{ color: "red" }}> 3 tipuri</span> de motorizari
       </>
     );
   },
   companyExpertiseParagraphs: function () {
     return (
       <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s.
+        Dorința de a ajuta, experiența acumulată de-a lungul timpului, dar și
+        studiile în acest domeniu, ne fac să vă oferim un pachet de servicii de
+        cea mai înaltă calitate. Evoluția tehnologiei a creat un cadru propice
+        pentru depășirea oricăror probleme. Personalul nostru urmează studiile
+        și cursurile profesionale în continuare, acest fapt contribuind la
+        actualizarea informatiiilor legate de tipul tuturor autovehiculelor.
       </p>
     );
   },
   expertiseImages: [
-    { id: 1, title: "Masini electrice", carImage: electricImage },
-    { id: 2, title: "Masini hybrid", carImage: hybridImage },
-    { id: 3, title: "Masini pe benzina/diesel", carImage: fuelImage },
+    { id: 1, title: "Autovehicule electrice", carImage: electricImage },
+    { id: 2, title: "Autovehicule hybrid", carImage: hybridImage },
+    { id: 3, title: "Autovehicule pe benzină/diesel", carImage: fuelImage },
   ],
 };

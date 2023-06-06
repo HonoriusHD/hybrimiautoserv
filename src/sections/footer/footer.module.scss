@@ -32,6 +32,7 @@
         .footer_text {
           padding-top: 20px;
           font-weight: variables.$footer-weight;
+          cursor: pointer;
         }
       }
       .social_info{
@@ -60,6 +61,7 @@
         margin-bottom: 20px;
         width: 70%;
         @include variables.flexProps(row, space-between, center);
+        cursor: pointer;
       }
       .legal_icons {
         @include variables.flexProps(row, space-around, center);

@@ -14,6 +14,9 @@
 .customWidth {
   width: 500px;
 }
+.expertizaWidth{
+  width: 670px;
+}
 .customContactWidth {
   width: 350px;
 }
@@ -28,7 +31,8 @@
 }
 
 @media screen and (max-width: 768px) {
-  .customWidth {
+  .customWidth,
+  .expertizaWidth{
     width: 100%;
   }
 }

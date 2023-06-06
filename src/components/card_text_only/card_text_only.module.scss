@@ -3,8 +3,20 @@
 .card_text_only {
   position: absolute;
   bottom: 24px;
-  left: 5%;
+  margin-left: 5%;
   background-color: #03050ee8;
   padding: 24px;
-  width: 80%;
+  width: 90%;
+  z-index: 20;
+  border-radius: 10px;
+h5{
+    font-weight: 500;
+  }
 }
+
+@media screen and (max-width: 900px) {
+  .card_text_only {
+
+  }
+}
+
